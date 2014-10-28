@@ -58,7 +58,7 @@
 				 response = GetResponseFromUSPS(request);  
 				 HandleResponseAsYouWish(response); //Handle the response as you want with another method
 				 //Create a new request for the rest of packages
-				request = baseURL + string.Format("?API=RateV4&XML=<RateV4Request USERID=\"{0}\" PASSWORD=\"{1}\" >", USPS_UserID, USPS_Password);
+				request = baseURL + string.Format("?API=RateV4&XML=<RateV4Request USERID=\"{0}\" >", USPS_UserID);
 				request += "<Revision />"; 
 			} 
 			counter++;
